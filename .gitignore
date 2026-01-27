@@ -1,0 +1,12 @@
+multi_material*
+cupy*
+*.ipynb
+stopavg*
+*cheat*
+*temp*
+temp*
+*.png
+*.jpg
+*test*
+*.npy
+basic_algorithms
