@@ -528,6 +528,9 @@ if len(ns_list) > 0 and len(intensity_list) > 0:
             fname = os.path.join(foldername, f'intensity{intensity}_ns{ns}')
             for iseed in tqdm(range(len(seed_list))):
                 x_store_iters_admm, x_store_iters_monotone, x_store_iters_polyaksgm, x_store_iters_extragradient, x_store_iters_msegd, runtime_admm, runtime_monotone, runtime_polyaksgm, runtime_extragradient, runtime_msegd = run_experiment(ns=ns, 
+                                                                                                                                                                                                                                                total_intensity=intensity, 
+                                                                                                                                                                                                                                                seed=seed_list[iseed], 
+                                                                                                                                                                                                                                                expname=fname, 
                                                                                                                                                                                                                                                 plot_curves=plot_curves)
                 if use_admm:
                     for isig in range(nsig):
